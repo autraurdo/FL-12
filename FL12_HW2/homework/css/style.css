@@ -1,0 +1,78 @@
+.tm-nav-item:hover{
+	background-color: lightskyblue;
+}
+.tm-nav-item-link:hover{
+	color:#fff;
+}
+.tm-nav-item{
+	box-shadow: rgba(61, 55, 61, 0.7);
+}
+.tm-content-box{
+	box-shadow: rgba(61, 55, 61, 0.7);
+}
+.tm-banner{
+	background: linear-gradient(to right, lightskyblue, burlywood);
+}
+.tm-banner-inner{
+	background-color: white;
+}
+.tm-banner-text{
+	text-shadow: 3px 3px 3px #333;
+	animation-name: slidein; 
+	animation-duration: 3s;
+}
+@keyframes slidein{
+	from{
+		margin-left:200px;
+	}
+	to{
+		margin-left: 0;
+	}
+}
+.tm-team-description-container {
+	float:left;
+	width: 35%;
+}
+.tm-team-img{
+	margin-right: 0;
+	float:right;
+}
+.box-bg:hover{
+	background-color: lightgrey;
+}
+.tm-section-title:hover{
+	color:lightskyblue;
+}
+h2{
+	color:lightskyblue;
+	text-align: center;
+}
+.text:before{
+	content: ">";
+}
+.text:after{
+	font-size: 10px;
+	color: red;
+	vertical-align: super;
+	content: "New";
+}
+ol {
+	list-style-type: lower-alpha;
+}
+p.tm-section-description:last-child{
+	font-style: italic;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+}
+p:first-letter{
+	font-style: bold
+}
+p.carousel-description{
+	font-style: normal;
+}
+.form-control{
+	border-color: lightskyblue;
+}
+.form-control:active{
+	background-color: lightskyblue;
+}
