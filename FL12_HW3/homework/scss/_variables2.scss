@@ -1,15 +1,13 @@
-$headBackground: "../img/m-h-night.jpg";
 $mainFontWeight: 500;
+$headBackground: "../img/m-h-night.jpg";
 $backGgoundColorNightPage: #21232e;
 $textStyle: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$radius: 5px;
-$colors: ( "cardsColor" : #3b3f50, "headersColor" : #ffffff, "buttonColor": #e3ac00, "mainPageColor" : #21232e, "awesomeColor": #ff4e33, "gradientColor": #942e52, "linksColor": #c0c3ce, "whiteColor" : #ffffff);
-
-@function color($key) {
-    @if map-has-key($colors, $key) {
-        @return map-get($colors, $key);
-    }
-
-    @warn "Unknown `#{$key}` in $colors.";
-    @return null;
-}
+$radius: 3px;
+$cardColor: #3b3f50;
+$headerColor: #ffffff;
+$buttonColor: #e3ac00;
+$mainColor: #21232e;
+$wordColor: #ff4e33;
+$gradientColor: #942e52;
+$linkColor: #c0c3ce; 
+$whiteColor: #ffffff;

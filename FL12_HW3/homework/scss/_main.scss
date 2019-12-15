@@ -1,7 +1,7 @@
 // Write your styles here
 @mixin button {
-    background-color: color(buttonColor);   
-    color: color(whiteColor);
+    background-color: $buttonColor;   
+    color: $whiteColor;
     width: 120px;
     height: 40px;
     border-radius: $radius;
@@ -11,7 +11,7 @@
 }
 body{
     max-width:1920px;
-    background-color:color(mainColor);   
+    background-color:$mainColor;   
 }
 .header {
     background: url($headBackground);
@@ -35,7 +35,7 @@ body{
     & p {
         font-weight: 800;
         font-size: 20px;
-        color: color(headerColor);
+        color: $headerColor;
     }
 
     & span {
@@ -44,7 +44,7 @@ body{
         font-weight: 800;
         font-size: 10px;
         left: 10px;
-        color: color(headerColor);
+        color:$headerColor;
     }
 }
 .header_heading {
@@ -58,7 +58,7 @@ body{
     line-height: 1;
     margin: 0;
     z-index: 1;
-    color: color(headerColor);
+    color: $headerColor;
     display: block;
 
     &:after {
@@ -67,13 +67,13 @@ body{
         width: 160px;
         position: absolute;
         top: 75px;
-        background-color: color(wordColor);
+        background-color: $wordColor;
         z-index: -1;
         display: block;
     }
 }
 .header_text {
-    color: color(headerColor);
+    color: $headerColor;
     white-space: pre;
     font-size: 13px;
     margin: 0;
@@ -89,7 +89,7 @@ body{
    }
 
     & a {
-        font-weight: color(whiteColor);
+        font-weight: $whiteColor;
         color: $mainFontWeight;
         padding-left: 100px;
         padding-top: 110px;        
@@ -113,7 +113,7 @@ body{
             position: absolute;
             top: 2px;
             left:762px;
-            background-color: color(wordColor);
+            background-color: $wordColor;
             z-index: -1;
         }
     }
@@ -129,7 +129,7 @@ body{
         height: 250px;
         padding: 20px;
         margin: 15px;
-        background-color: color(cardColor);
+        background-color: $cardColor;
         border-radius: $radius;
 
         .section_card_img {
@@ -155,13 +155,13 @@ body{
                 font-family: $textStyle;
                 font-size: 13px;
                 font-weight: $mainFontWeight;
-                color: color(linkColor);
+                color: $linkColor;
                 padding: 0px 70px;
                 text-align: left;
             }
 
             .section_link{
-                font-weight: color(whiteColor);
+                font-weight: $whiteColor;
                 color: $mainFontWeight; 
                 padding-bottom:40px;
             }
@@ -180,7 +180,7 @@ body{
     box-sizing: border-box;
     left: 200px;
     height:130px;
-    background-image: linear-gradient(to right, color(buttonColor), color(gradientColor));
+    background-image: linear-gradient(to right, $buttonColor, $gradientColor);
 
     button.section_banner_button {
         @include button;
@@ -193,7 +193,7 @@ body{
             position: relative;
             font-size: 26px;
             white-space: pre;
-            color: color(headerColor);
+            color: $headerColor;
             margin: 0;
             font-weight: 700;
             z-index: 1;
@@ -207,7 +207,7 @@ body{
             width: 57px;
             left: 207px;
             bottom: 30px;
-            background-color: color(wordColor);
+            background-color: $wordColor;
             z-index: -1;
             position: absolute;
         }
@@ -219,14 +219,14 @@ body{
             bottom: 30px;
             font-size: 13px;
             font-weight: $mainFontWeight;
-            color: color(linkColor);
+            color: $linkColor;
             left:-200px;
         }
     }
 }
 .footer {
     display: flex;
-    background-color: color(cardColor);
+    background-color: $cardColor;
     align-items: center;
     justify-content: space-between;
 
@@ -234,7 +234,7 @@ body{
         padding-bottom: 40px;
         padding-top: 120px;
         font-family: 'Hind', sans-serif;
-        color: color(linkColor);
+        color: $linkColor;
 
         & .footer_logo {
             @extend .landing-logo;
