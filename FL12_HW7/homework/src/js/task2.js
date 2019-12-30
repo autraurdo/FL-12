@@ -2,7 +2,7 @@ var ask = confirm('Do you want to play a game?');
 var possiblePrize = 100;
 var prize = 0;
 attempt = 0;
-isWom = false;
+isWon = false;
 if (ask === false) {
 	alert('You did not become a bilionaire, but can.');
 } else {
